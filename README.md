@@ -9,7 +9,7 @@
 本仓库包含一套**完整的MySQL学习体系**，分为两个阶段：
 
 ### 🎯 第一阶段：CRUD业务开发篇（7-14天）
-**位置**：`docs/crud/` 目录（25个文件）
+**位置**：`fundamentals/` 目录（25个文件）
 
 **你将学会**：
 - ✅ 设计规范的数据库表结构
@@ -24,7 +24,7 @@
 - 需要马上用MySQL开发项目
 
 ### 🔥 第二阶段：MySQL实战45讲（12-16周）
-**位置**：`docs/` 目录（8个文件）+ 47个PDF原始课程
+**位置**：`advanced/` 目录（8个文件）+ 47个PDF原始课程
 
 **你将深入**：
 - 🚀 MySQL架构和执行流程
@@ -47,7 +47,7 @@
 ```
 ┌─────────────────────────────────────────────────┐
 │  第一阶段：CRUD业务开发篇（7-14天）               │
-│  📂 docs/crud/                                   │
+│  📂 fundamentals/                                │
 │                                                  │
 │  第1-2天   → 单表操作（增删改查基础）             │
 │  第3-5天   → 多表查询（JOIN、子查询）            │
@@ -60,7 +60,7 @@
                         ↓
 ┌─────────────────────────────────────────────────┐
 │  第二阶段：MySQL实战45讲（12-16周）              │
-│  📂 docs/ + PDF课程                              │
+│  📂 advanced/ + PDF课程                          │
 │                                                  │
 │  第1-2周   → 基础篇（架构、日志、事务）          │
 │  第3-4周   → 索引与锁（原理、优化）              │
@@ -109,7 +109,7 @@ SHOW ENGINES;
 
 ✅ 如果看到MySQL 8.0版本 + utf8mb4字符集，环境就准备好了！
 
-**详细说明**：查看 [docs/00-环境准备.md](docs/00-环境准备.md)
+**详细说明**：查看 [getting-started/setup.md](getting-started/setup.md)
 
 ---
 
@@ -117,46 +117,46 @@ SHOW ENGINES;
 
 ### 开始学习
 
-👉 **打开学习大纲**：[docs/crud/README.md](docs/crud/README.md)
+👉 **打开学习大纲**：[fundamentals/README.md](fundamentals/README.md)
 
 ### 课程目录
 
 **第一章：数据库设计基础（5个文件）**
-1. [表设计基础与规范](docs/crud/01-表设计基础与规范.md) - 命名、字段类型、规范
-2. [主键与索引设计](docs/crud/02-主键与索引设计.md) - 主键策略、索引类型
-3. [表关系设计](docs/crud/03-表关系设计.md) - 一对一、一对多、多对多
-4. [范式与反范式](docs/crud/04-范式与反范式.md) - 什么时候规范化
-5. [常用表设计模式](docs/crud/05-常用表设计模式.md) - 软删除、版本号、扩展字段
+1. [表设计基础与规范](fundamentals/01-表设计基础与规范.md) - 命名、字段类型、规范
+2. [主键与索引设计](fundamentals/02-主键与索引设计.md) - 主键策略、索引类型
+3. [表关系设计](fundamentals/03-表关系设计.md) - 一对一、一对多、多对多
+4. [范式与反范式](fundamentals/04-范式与反范式.md) - 什么时候规范化
+5. [常用表设计模式](fundamentals/05-常用表设计模式.md) - 软删除、版本号、扩展字段
 
 **第二章：单表操作（4个文件）**
-6. [单表增删改查基础](docs/crud/06-单表增删改查基础.md) - CREATE、INSERT、UPDATE、DELETE
-7. [WHERE条件查询](docs/crud/07-WHERE条件查询.md) - 比较、逻辑、LIKE、NULL处理
-8. [聚合与分组查询](docs/crud/08-聚合与分组查询.md) - COUNT、SUM、GROUP BY、HAVING
-9. [排序与分页](docs/crud/09-排序与分页.md) - ORDER BY、LIMIT、深分页优化
+6. [单表增删改查基础](fundamentals/06-单表增删改查基础.md) - CREATE、INSERT、UPDATE、DELETE
+7. [WHERE条件查询](fundamentals/07-WHERE条件查询.md) - 比较、逻辑、LIKE、NULL处理
+8. [聚合与分组查询](fundamentals/08-聚合与分组查询.md) - COUNT、SUM、GROUP BY、HAVING
+9. [排序与分页](fundamentals/09-排序与分页.md) - ORDER BY、LIMIT、深分页优化
 
 **第三章：多表查询（4个文件）**
-10. [表关联查询基础](docs/crud/10-表关联查询基础.md) - INNER JOIN、LEFT JOIN
-11. [子查询](docs/crud/11-子查询.md) - WHERE子查询、FROM子查询、EXISTS
-12. [复杂查询场景](docs/crud/12-复杂查询场景.md) - UNION、窗口函数、CTE
-13. [常见业务查询模式](docs/crud/13-常见业务查询模式.md) - 分页、搜索、统计、排行
+10. [表关联查询基础](fundamentals/10-表关联查询基础.md) - INNER JOIN、LEFT JOIN
+11. [子查询](fundamentals/11-子查询.md) - WHERE子查询、FROM子查询、EXISTS
+12. [复杂查询场景](fundamentals/12-复杂查询场景.md) - UNION、窗口函数、CTE
+13. [常见业务查询模式](fundamentals/13-常见业务查询模式.md) - 分页、搜索、统计、排行
 
 **第四章：业务场景实战（5个文件）**
-14. [用户系统设计与实现](docs/crud/14-用户系统设计与实现.md) - 注册、登录、权限
-15. [订单系统设计与实现](docs/crud/15-订单系统设计与实现.md) - 下单、支付、状态流转
-16. [内容管理系统设计与实现](docs/crud/16-内容管理系统设计与实现.md) - 文章、评论、点赞
-17. [营销系统设计与实现](docs/crud/17-营销系统设计与实现.md) - 优惠券、积分、签到
-18. [数据分析查询](docs/crud/18-数据分析查询.md) - 用户分析、RFM模型、漏斗分析
+14. [用户系统设计与实现](fundamentals/14-用户系统设计与实现.md) - 注册、登录、权限
+15. [订单系统设计与实现](fundamentals/15-订单系统设计与实现.md) - 下单、支付、状态流转
+16. [内容管理系统设计与实现](fundamentals/16-内容管理系统设计与实现.md) - 文章、评论、点赞
+17. [营销系统设计与实现](fundamentals/17-营销系统设计与实现.md) - 优惠券、积分、签到
+18. [数据分析查询](fundamentals/18-数据分析查询.md) - 用户分析、RFM模型、漏斗分析
 
 **第五章：性能优化（4个文件）**
-19. [索引优化实战](docs/crud/19-索引优化实战.md) - EXPLAIN分析、索引设计原则
-20. [查询优化实战](docs/crud/20-查询优化实战.md) - 慢查询识别、JOIN优化、分页优化
-21. [写入优化实战](docs/crud/21-写入优化实战.md) - 批量操作、事务优化、锁优化
-22. [缓存与架构优化](docs/crud/22-缓存与架构优化.md) - 缓存设计、读写分离、分库分表
+19. [索引优化实战](fundamentals/19-索引优化实战.md) - EXPLAIN分析、索引设计原则
+20. [查询优化实战](fundamentals/20-查询优化实战.md) - 慢查询识别、JOIN优化、分页优化
+21. [写入优化实战](fundamentals/21-写入优化实战.md) - 批量操作、事务优化、锁优化
+22. [缓存与架构优化](fundamentals/22-缓存与架构优化.md) - 缓存设计、读写分离、分库分表
 
 **第六章：最佳实践（3个文件）**
-23. [SQL编写规范](docs/crud/23-SQL编写规范.md) - 命名、风格、安全
-24. [常见陷阱与解决方案](docs/crud/24-常见陷阱与解决方案.md) - NULL陷阱、类型转换、死锁
-25. [数据库设计评审清单](docs/crud/25-数据库设计评审清单.md) - 完整评审清单
+23. [SQL编写规范](fundamentals/23-SQL编写规范.md) - 命名、风格、安全
+24. [常见陷阱与解决方案](fundamentals/24-常见陷阱与解决方案.md) - NULL陷阱、类型转换、死锁
+25. [数据库设计评审清单](fundamentals/25-数据库设计评审清单.md) - 完整评审清单
 
 ### 学习建议
 
@@ -178,18 +178,18 @@ SHOW ENGINES;
 ### 学习内容
 
 **基础原理篇**
-- [01-架构与日志系统](docs/01-架构与日志系统.md) - MySQL架构、redo log、binlog
-- [02-事务隔离](docs/02-事务隔离.md) - ACID、隔离级别、MVCC
-- [03-索引原理](docs/03-索引原理.md) - B+树、聚簇索引、覆盖索引
-- [04-锁机制](docs/04-锁机制.md) - 全局锁、表锁、行锁、MDL锁
+- [01-架构与日志系统](advanced/01-架构与日志系统.md) - MySQL架构、redo log、binlog
+- [02-事务隔离](advanced/02-事务隔离.md) - ACID、隔离级别、MVCC
+- [03-索引原理](advanced/03-索引原理.md) - B+树、聚簇索引、覆盖索引
+- [04-锁机制](advanced/04-锁机制.md) - 全局锁、表锁、行锁、MDL锁
 
 **性能优化篇**
-- [05-索引与性能优化](docs/05-索引与性能优化.md) - 索引选择、change buffer、刷脏页
-- [06-查询优化](docs/06-查询优化.md) - count优化、order by优化、join优化
+- [05-索引与性能优化](advanced/05-索引与性能优化.md) - 索引选择、change buffer、刷脏页
+- [06-查询优化](advanced/06-查询优化.md) - count优化、order by优化、join优化
 
 **高可用架构篇**
-- [07-高可用架构](docs/07-高可用架构.md) - 主从复制、binlog应用、备份恢复
-- [08-进阶主题](docs/08-进阶主题.md) - 临时表、内存表、分区表、分库分表
+- [07-高可用架构](advanced/07-高可用架构.md) - 主从复制、binlog应用、备份恢复
+- [08-进阶主题](advanced/08-进阶主题.md) - 临时表、内存表、分区表、分库分表
 
 **原始课程**：47个PDF文件，包含详细的理论讲解
 
@@ -471,10 +471,10 @@ docker run --name mysql-study -e MYSQL_ROOT_PASSWORD=123456 -p 3306:3306 -d mysq
 ```
 
 ### 第二步：开始CRUD学习
-👉 打开：[docs/crud/README.md](docs/crud/README.md)
+👉 打开：[fundamentals/README.md](fundamentals/README.md)
 
 ### 第三步：完成后进阶学习
-👉 打开：[docs/MySQL学习大纲.md](docs/MySQL学习大纲.md)
+👉 打开：[ROADMAP.md](ROADMAP.md)
 
 ---
 
